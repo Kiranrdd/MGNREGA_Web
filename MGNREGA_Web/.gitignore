@@ -1,0 +1,11 @@
+﻿bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+packages/
+*.pdb
+TestResults/
+node_modules/
