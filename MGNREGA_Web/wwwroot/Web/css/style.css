@@ -125,9 +125,33 @@ p {
 	color: #505050;
 	margin: 0px;
 }
-
-.bg_cover{
-    background-position: center center;
+#flashInfo {
+    padding: 10px 0;   
+}
+.boxMarquee {
+    display: flex;
+    margin-top: -9px;
+    margin-left: -6px;
+}
+.leftMarquee {
+    flex: 0 0 150px;
+    background-color: #3c763d;
+    color: #fff;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 4px;
+}
+.rightMarquee {
+    flex: 1;
+    background-color: #eeecec;
+    height: 40px;
+    padding-top: -20px;
+}
+    .bg_cover{
+    /*background-position: center center;*/
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -137,36 +161,40 @@ p {
 /*===== All Button Style =====*/
 
 .main-btn {
-	display: inline-block;
-	font-weight: 500;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	border: 1px solid #ffc600;
-	padding: 0 35px;
-	font-size: 16px;
+    display: inline-block;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    /*border: 1px solid #ffc600;*/
+    border: 1px solid #118931;
+    padding: 0 35px;
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-	line-height: 50px;
-	border-radius: 5px;
-    color: #07294d;
+    line-height: 50px;
+    border-radius: 5px;
+    color: #ffc600;
     cursor: pointer;
     position: relative;
     overflow: hidden;
     z-index: 5;
     -webkit-transition: 0.4s ease-in-out;
     transition: 0.4s ease-in-out;
-    background-color: #ffc600;
+    /*background-color: #ffc600;*/
+    background-color: #118931;
 }
-.main-btn:hover{
-    color: #ffc600;
-    border-color: #07294d;
-    background-color: #07294d;
-}
+    .main-btn:hover {
+        /*color: #ffc600;*/
+        color: #ffffff;
+        border-color: #07294d;
+        /* background-color: #07294d;*/
+        background-color: #043611;
+    }
 
 
 
@@ -218,14 +246,14 @@ p {
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-.rubix-cube .layer{
-	width:14px;
-	height:14px;
-	background-color:#07294d;
-	border:1px solid #FFF;
-	position:absolute;
-	
-}
+    .rubix-cube .layer {
+        width: 14px;
+        height: 14px;
+        /*background-color: #07294d;*/
+        background-color: #13aa6c;
+        border: 1px solid #FFF;
+        position: absolute;
+    }
 .rubix-cube .layer-1{
 	left:0px;
 	top:0px;
@@ -538,23 +566,25 @@ p {
     padding: 25px 0;
 }
 
-.navigation .navbar .navbar-nav > li > a.active,
-.navigation .navbar .navbar-nav > li > a:hover{
-    color: #ffc600;
-}
+    .navigation .navbar .navbar-nav > li > a.active,
+    .navigation .navbar .navbar-nav > li > a:hover {
+        /*color: #ffc600;*/
+        color: #118931;
+       
+    }
 
-.navigation .navbar .navbar-nav li .sub-menu{
-    position: absolute;
-    top: 110%;
-    left: 0;
-    background-color: #07294d;
-    width: 200px;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.4s linear;
-    transition: all 0.4s linear;
-    z-index: 99;
-}
+    .navigation .navbar .navbar-nav li .sub-menu {
+        position: absolute;
+        top: 110%;
+        left: 0;
+        background-color: #113d03;
+        width: 200px;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.4s linear;
+        transition: all 0.4s linear;
+        z-index: 99;
+    }
 .navigation .navbar .navbar-nav li:hover .sub-menu{
     opacity: 1;
     visibility: visible;
@@ -968,8 +998,9 @@ p {
     4. CATEGORY css 
 ======================================================*/
 
-.color-1{
-    background-color: #4886ff;
+.color-1 {
+    /*background-color: #4886ff;*/
+    background-color: #023a09d6;
 }
 .color-2{
     background-color: #b5d56a;
@@ -1055,7 +1086,7 @@ p {
 
 #about-part{
     position: relative;
-    padding-bottom: 220px;
+    /*padding-bottom: 220px;*/
 }
 .about-bg{
     width: 52%;
@@ -1138,19 +1169,21 @@ p {
     position: relative;
 }
 
-.apply-color-1{
-    background-color: #07294d;
+.apply-color-1 {
+    /*background-color: #07294d;*/
+    background-color: #13aa6c;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    margin-right:5px;
 }
-.apply-color-2{
-    background-color: #092e56;
+.apply-color-2 {
+    background-color: #13aa6c;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .apply .apply-cont {
-    padding: 45px 50px 50px;
+    padding:-1px 50px 50px;
 }
 .apply .apply-cont h3{
     font-size: 30px;
@@ -1164,6 +1197,7 @@ p {
 .apply .apply-cont .main-btn:hover{
     border-color: #ffc600;
 }
+/*=======================================*/
 
 
 /*=====================================================
@@ -1700,8 +1734,9 @@ p {
     13. FOOTER css 
 ======================================================*/
 
-.footer-top{
-    background-color: #07294d;
+.footer-top {
+    /*background-color: #07294d;*/
+    background-color: #0f4d07ba;
 }
 
 .footer-about {
@@ -1802,8 +1837,9 @@ p {
     color: #fff;
 }
 
-.footer-copyright{
-    background-color: #021d3a;
+.footer-copyright {
+    /*background-color: #021d3a;*/
+    background-color: #023a09d6;
 }
 .footer-copyright .copyright p{
     color: #fff;
@@ -1812,14 +1848,15 @@ p {
     font-weight: 600;
 }
 
-.back-to-top{
+.back-to-top {
     position: fixed;
     right: 20px;
     bottom: 20px;
     width: 40px;
     height: 40px;
     line-height: 35px;
-    background-color: #ffc600;
+    /*background-color: #ffc600;*/
+    background-color: #13aa6c;
     color: #fff;
     font-size: 28px;
     border-radius: 5px;
@@ -1829,10 +1866,11 @@ p {
     transition: all 0.4s linear;
     display: none;
 }
-.back-to-top:hover{
-    color: #fff;
-    background-color: #021d3a;
-}
+    .back-to-top:hover {
+        color: #fff;
+        /*background-color: #021d3a;*/
+        background-color: #118931;
+    }
 
 
 /*=====================================================
@@ -2377,7 +2415,10 @@ p {
     font-size: 16px;
     color: #8a8a8a;
 }
-
+.nav-item a i {
+    margin-left: 8px;
+    font-size:22px;
+}
 .courses-top-search .nav .nav-item a.active{
     color: #ffc600;
 }
@@ -3786,6 +3827,18 @@ p.form-message.error {
 
 
 
+.navigation {
+   
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white; /* or your navbar's background color */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.logo-item img {
+    vertical-align: middle;
+    margin-right: 15px;
+}
 
 
 

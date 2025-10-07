@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Edubin - LMS Education HTML Template</title>
+    <title>Mahatma Gandhi National Rural Employment Guarantee Scheme-Jharkhand</title>
 
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="~/web/images/favicon.png" type="image/png">
@@ -42,7 +42,12 @@
 
     <!--====== Responsive css ======-->
     <link rel="stylesheet" href="~/web/css/responsive.css">
+   @*  <!-- In <head> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Before </body> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ *@
 
 </head>
 <body>
@@ -110,35 +115,35 @@
                 </div> <!-- container -->
             </div> <!-- header top -->
  *@
-         @*    <div class="header-logo-support pt-30 pb-30">
+            <div class="header-logo-support pt-30 pb-30">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4">
+                        <div class="col-lg-3 col-md-3">
                             <div class="logo">
-                                <a href="index-2.html">
-                                    <img src="~/web/images/logo.png" alt="Logo">
+                                <a href="@Url.Action("Index", "Home")">
+                                    <img src="~/web/images/MGNREGA_Jharkhand.png" alt="Logo" style="width:90px;height:80px" />
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8">
-                            <div class="support-button float-right d-none d-md-block">
-                                <div class="support float-left">
+                        <div class="col-lg-7 col-md-7">
+                            <div class="support-button">
                                     <div class="icon">
-                                        <img src="~/web/images/all-icon/support.png" alt="icon">
-                                    </div>
-                                    <div class="cont">
-                                        <p>Need Help? call us free</p>
-                                        <span>321 325 5678</span>
-                                    </div>
+                                    <h3 style="color:#0f471e">
+                                        MAHATMA GANDHI NATIONAL RURAL EMPLOYMENT GUARANTEE SCHEME
+                                        </h3>
+                                     </div>
                                 </div>
-                                <div class="button float-left">
-                                    <a href="#" class="main-btn">Apply Now</a>
-                                </div>
+                        </div>
+                        <div class="col-lg-2 col-md-2">
+                            <div class="logo">
+                                <a href="@Url.Action("Index", "Home")">
+                                    <img src="~/web/images/government-of-jharkhand-logo.png" alt="Logo" style="width:90px;height:80px" />
+                                </a>
                             </div>
                         </div>
                     </div> <!-- row -->
                 </div> <!-- container -->
-            </div> *@ <!-- header logo support -->
+            </div> <!-- header logo support -->
 
             <div class="navigation">
                 <div class="container">
@@ -150,80 +155,58 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <div class="col-lg-4 col-md-4">
-                                    <div class="logo">
-                                        <a href="index-2.html">
-                                            <img src="~/web/images/logo.png" alt="Logo">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                
+                                <div class="collapse navbar-collapse sub-menu-bar float-right" id="navbarSupportedContent">
                                     <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item logo-item" style="display: none;">
+                                            <img src="~/web/images/MGNREGA_Jharkhand.png" alt="Logo" style="width:70px;height:60px;" />
+                                        </li>
                                         <li class="nav-item">
-                                            <a class="active" href="index-2.html">Home</a>
+                                            <a class="active" href="@Url.Action("Index", "Home")">Home</a>
+                                           
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#">About us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#">Job Card</a>
+                                           
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#">Offical Documents<i class="fa fa-caret-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a class="active" href="index-2.html">Home 01</a></li>
-                                                <li><a href="index-3.html">Home 02</a></li>
-                                                <li><a href="index-4.html">Home 03</a></li>
+                                                <li><a href="#">Annual Reports</a></li>
+                                                <li><a href="#">MGNREGA Act</a></li>
+                                                <li><a href="#">Master Circular</a></li>
+                                                <li><a href="#">Publications</a></li>
+                                                <li><a href="#">News Letters</a></li>
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="about.html">About us</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="courses.html">Courses</a>
+                                            <a href="#">RTI <i class="fa fa-caret-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="courses.html">Courses</a></li>
-                                                <li><a href="courses-singel.html">Course Singel</a></li>
+                                                <li><a href="#">RTI contacts</a></li>
+                                                <li><a href="#">Application procedure</a></li>
+                                                <li><a href="#">FAQs</a></li>
                                             </ul>
                                         </li>
+                                    
                                         <li class="nav-item">
-                                            <a href="events.html">Events</a>
+                                            <a href="#">Gallery <i class="fa fa-caret-down"></i></a>
                                             <ul class="sub-menu">
-                                                <li><a href="events.html">Events</a></li>
-                                                <li><a href="events-singel.html">Event Singel</a></li>
+                                                <li><a href="#">Media library</a></li>                                              
                                             </ul>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="teachers.html">Our teachers</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="teachers.html">teachers</a></li>
-                                                <li><a href="teachers-singel.html">teacher Singel</a></li>
-                                            </ul>
+                                            <a href="#">Contact</a>
+                                          
                                         </li>
-                                     @*    <li class="nav-item">
-                                            <a href="blog.html">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-singel.html">Blog Singel</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="shop.html">Shop</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="shop.html">Shop</a></li>
-                                                <li><a href="shop-singel.html">Shop Singel</a></li>
-                                            </ul>
-                                        </li> *@
-                                        <li class="nav-item">
-                                            <a href="contact.html">Contact</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="contact.html">Contact Us</a></li>
-                                                <li><a href="contact-2.html">Contact Us 2</a></li>
-                                            </ul>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </nav> <!-- nav -->
                         </div>
-                        <div class="col-lg-2 col-md-2 col-sm-3 col-4">
-                            <div class="right-icon text-right">
-                                <ul>
-                                    <li><a href="#" id="search"><i class="fa fa-search"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-shopping-bag"></i><span>0</span></a></li>
-                                </ul>
-                            </div> <!-- right icon -->
-                        </div>
+                   
                     </div> <!-- row -->
                 </div> <!-- container -->
             </div>
@@ -256,20 +239,25 @@
 
     <footer id="footer-part">
         <div class="footer-top pt-40 pb-70">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="footer-about mt-40">
                             <div class="logo">
-                                <a href="#"><img src="~/web/images/logo-2.png" alt="Logo"></a>
+                                <a href="#"><img src="~/web/images/mgnrega_jharkhand.png" alt="Logo" style="width:70px; height:70px"></a>
                             </div>
-                            <p>Gravida nibh vel velit auctor aliquetn quibibendum auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
-                            <ul class="mt-20">
+                            <p>
+                                Website content is owned managed by Ministry of Rural Development, Government of Jharkhand.
+
+                               
+                            </p>
+                           
+                           @*  <ul class="mt-20">
                                 <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                            </ul>
+                            </ul> *@
                         </div> <!-- footer about -->
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6">
@@ -278,33 +266,34 @@
                                 <h6>Sitemap</h6>
                             </div>
                             <ul>
-                                <li><a href="index-2.html"><i class="fa fa-angle-right"></i>Home</a></li>
-                                <li><a href="about.html"><i class="fa fa-angle-right"></i>About us</a></li>
-                                <li><a href="courses.html"><i class="fa fa-angle-right"></i>Courses</a></li>
-                                <li><a href="blog.html"><i class="fa fa-angle-right"></i>News</a></li>
-                                <li><a href="events.html"><i class="fa fa-angle-right"></i>Event</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Home</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>About us</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Job card</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Annual Report</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>MGNREGA Act</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Master Circular</a></li>
                             </ul>
                             <ul>
+                              
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Publications</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>News Letters</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>RTI</a></li>
                                 <li><a href="#"><i class="fa fa-angle-right"></i>Gallery</a></li>
-                                <li><a href="shop.html"><i class="fa fa-angle-right"></i>Shop</a></li>
-                                <li><a href="teachers.html"><i class="fa fa-angle-right"></i>Teachers</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
-                                <li><a href="contact.html"><i class="fa fa-angle-right"></i>Contact</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>Contact</a></li>
                             </ul>
                         </div> <!-- footer link -->
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-6">
                         <div class="footer-link support mt-40">
                             <div class="footer-title pb-25">
-                                <h6>Support</h6>
+                                <h6>Related Links</h6>
                             </div>
                             <ul>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>FAQS</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Privacy</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Policy</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right"></i>Documentation</a></li>
-                            </ul>
+                                <li><a href="https://rural.gov.in/"><i class="fa fa-angle-right"></i>MoRD</a></li>
+                                <li><a href="https://www.nic.gov.in/"><i class="fa fa-angle-right"></i>NIC</a></li>
+                                <li><a href="https://www.jharkhand.gov.in/"><i class="fa fa-angle-right"></i>State Government</a></li>
+                                <li><a href="https://rti.jharkhand.gov.in/"><i class="fa fa-angle-right"></i>RTI Portal</a></li>
+                              </ul>
                         </div> <!-- support -->
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -318,7 +307,7 @@
                                         <i class="fa fa-home"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>143 castle road 517 district, kiyev port south Canada</p>
+                                        <p> <p>Rural Development Department, FFP building, Dhurwa, Near Project Building</p></p>
                                     </div>
                                 </li>
                                 <li>
@@ -326,7 +315,7 @@
                                         <i class="fa fa-phone"></i>
                                     </div>
                                     <div class="cont">
-                                        <p>+3 123 456 789</p>
+                                        <p>123 456 789</p>
                                     </div>
                                 </li>
                                 <li>
@@ -347,9 +336,9 @@
         <div class="footer-copyright pt-10 pb-25">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-12">
                         <div class="copyright text-md-left text-center pt-15">
-                            <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a> </p>
+                            <p><a target="_blank" href="https://jslps.in/" style="color:#ffffff">  All Rights Reserved by Government of Jharkhand, India. | Version 1.0 | Developed & Maintained by <b>JSLPS(Microware Computing and Consulting Pvt. Ltd.)</b> Team.</a> </p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -389,7 +378,6 @@
 
     <!--====== Nice Number js ======-->
     <script src="~/web/js/jquery.nice-number.min.js"></script>
-    @* <script src="~/web/js/jquery.nice-number.min.js"></script> *@
     <!--====== Count Down js ======-->
     <script src="~/web/js/jquery.countdown.min.js"></script>
 
@@ -405,9 +393,48 @@
     <!--====== Map js ======-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC3Ip9iVC0nIxC6V14CKLQ1HZNF_65qEQ"></script>
     <script src="~/web/js/map-script.js"></script>
- @*    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script> *@
+
     @await RenderSectionAsync("Scripts", required: false)
+    <script>
+        // Translation dictionary
+        const translations = {
+          en: {
+            welcome: "Welcome to Our Website",
+            intro: "This is a simple demo of language switcher."
+          },
+          hi: {
+            welcome: "हमारी वेबसाइट पर आपका स्वागत है",
+            intro: "यह भाषा बदलने का एक सरल डेमो है।"
+          }
+        };
+
+        // Set default language
+        function setLanguage(lang) {
+          document.querySelectorAll("[data-translate]").forEach(el => {
+            let key = el.getAttribute("data-translate");
+            el.innerText = translations[lang][key];
+          });
+
+          // Save preference in localStorage
+          localStorage.setItem("site-lang", lang);
+        }
+
+        // On page load, apply saved language or default to English
+        window.onload = () => {
+          let savedLang = localStorage.getItem("site-lang") || "en";
+          document.getElementById("langSwitcher").value = savedLang;
+          setLanguage(savedLang);
+        };
+    </script>
+    <script>
+    window.addEventListener('scroll', function () {
+        const logoItem = document.querySelector('.logo-item');
+        if (window.scrollY > 100) {
+            logoItem.style.display = 'inline-block';
+        } else {
+            logoItem.style.display = 'none';
+        }
+    });
+</script>
 </body>
 </html>
