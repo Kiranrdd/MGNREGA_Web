@@ -33,7 +33,7 @@
 body {
     font-family: nunitosans;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 17px;
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -97,11 +97,11 @@ h4 {
     font-family: 'prata';
     color: #051e38;
     letter-spacing: 2px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 20px;
 }
 
 h6 {
@@ -116,7 +116,8 @@ ul, ol {
 
 p {
     font-family: 'nunitosans';
-    font-size: 14px;
+    /*font-size: 14px;*/
+    font-size: 18px;
     font-weight: 400;
     line-height: 23px;
     color: #505050;
@@ -156,10 +157,20 @@ p {
     /*background-position: center center;*/
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+       width: 100%;
     height: 100%;
+    /*width: 100px;
+    height: 100px;*/
 }
-
+.bg_coverslider {
+    /*background-position: center center;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* width: 100%;
+    height: 100%;*/
+    width: 100px;
+    height: 100px;
+}
 /*===== All Button Style =====*/
 
 .main-btn {
@@ -174,7 +185,7 @@ p {
     user-select: none;
     border: 1px solid #118931;
     padding: 0 35px;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 50px;
     border-radius: 5px;
@@ -719,7 +730,7 @@ p {
     height: 100px;
     background-color: white;
     border-radius: 5px;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 /*===== Header top =====*/
 .header-top {
@@ -901,7 +912,9 @@ p {
             position: absolute;
             top: 110%;
             left: 0;
-            background-color: #ffffff;
+            /*background-color: #ffffff;*/
+            background-color: #113d03;
+            color: #ffffff;
             width: 200px;
             opacity: 0;
             visibility: hidden;
@@ -926,13 +939,16 @@ p {
                 padding: 7px 15px;
                 display: block;
                 border-bottom: 1px solid rgb(181 181 181 / 50%);
-                color: #07294d;
+                /* color: #07294d;*/
+                color: #ffffff;
             }
 
                 .navigation .navbar .navbar-nav li .sub-menu li a.active,
                 .navigation .navbar .navbar-nav li .sub-menu li a:hover {
-                    padding-left: 20px;
-                    color: #c90914;
+                    padding-left: 10px;
+                    /*color: #c90914;*/
+                    /*color: #eeeaea;*/
+                    color: #ffc600;
                 }
 
 .sub-nav-toggler {
@@ -1632,7 +1648,8 @@ p {
 }
 
     .apply .apply-cont h3 {
-        font-size: 17px;
+        font-family: nunitosans;
+        font-size: 19px;
         color: #fff;
         padding: 10px;
     }
@@ -2127,9 +2144,10 @@ p {
             color: #fff;
             text-align: center;
             font-family: 'prata';
+            /*font-family: nunitosans;*/
             padding-top: 40px;
             letter-spacing: 2px;
-            font-size: 20px;
+            font-size: 30px;
         }
 
             #testimonial .section-title h5::before {
@@ -2292,7 +2310,8 @@ p {
 ======================================================*/
 
 .footer-top {
-    background-color: #16a249;
+    /*background-color: #16a249;*/
+    background-color: #0f4d07ba;
 }
 
 .footer-about {
@@ -2336,6 +2355,7 @@ p {
 .footer-title h6 {
     font-size: 18px;
     color: #fff;
+    font-family: nunitosans;
 }
 
 .footer-link {
@@ -2354,7 +2374,7 @@ p {
 
             .footer-link ul li a {
                 color: #fff;
-                font-size: 13px;
+                /*font-size: 18px;*/
                 -webkit-transition: all 0.4s linear;
                 transition: all 0.4s linear;
             }
@@ -2405,7 +2425,8 @@ p {
         }
 
 .footer-copyright {
-    background-color: #0c8137;
+    /* background-color: #0c8137;*/
+    background-color: #023a09d6;
 }
 
     .footer-copyright .copyright p {
@@ -4751,4 +4772,17 @@ p.form-message.error {
     .about-bg {
         position: relative;
     }
+
+
+
+    .text-size-controls {
+        margin: 10px;
+    }
+
+        .text-size-controls button {
+            padding: 5px 10px;
+            margin: 0 2px;
+            cursor: pointer;
+        }
+
 }

@@ -17,6 +17,10 @@ namespace MGNREGA_Web.Controllers
         {
             return View();
         }
+        public IActionResult About_us()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {

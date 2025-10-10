@@ -36,10 +36,12 @@
         <header id="header-part">
             <div class="header-top d-none d-lg-block">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
+                    <div class="row align-items-center">
+
+                        <!-- Notice Ticker -->
+                        <div class="col-lg-9">
                             <div class="header-contact text-lg-left text-center position-relative">
-                                <div class="newTickerContainer">
+                                <div class="newTickerContainer d-flex align-items-center">
                                     <div class="newsTicker">NOTICE</div>
                                     <div class="ticker-container">
                                         <div class="ticker">
@@ -62,17 +64,83 @@
                             </div>
                         </div>
 
+                        <!-- Language Switcher -->
+                        <div class="col-lg-3 text-lg-right text-center">
+                            <div class="languagemenu">
+                             @*    <select name="lang_choice_polylang-1" id="lang_choice_polylang-1" class="pll-switcher-select">
+                                    <option value="/" lang="ml-IN">हिन्दी</option>
+                                    <option value="/en/home/" lang="en-GB" selected="selected" data-lang='{"id":0,"name":"English","slug":"en","dir":0}'>English</option>
+                                </select> *@
+                                <div id="google_translate_element" class="col-lg-1">
+                                    </div>
+                                <button onclick="decreaseFont()">A-</button>
+                                <button onclick="resetFont()">A</button>
+                                <button onclick="increaseFont()">A+</button>
+                                <script type="text/javascript">
+                                    function googleTranslateElementInit() {
+                                        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'hi', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                                            'google_translate_element');
+                                    }
+                                </script>
+                                <script type="text/javascript"
+                                        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                                </script>
+
+                               @*  <!-- Your language selector -->
+                                <select name="lang_choice_polylang-1" id="lang_choice_polylang-1" class="pll-switcher-select">
+                                    <option value="en" selected>English</option>
+                                    <option value="hi">हिन्दी</option>
+                                </select>
+
+                                <!-- Google Translate element container -->
+                                <div id="google_translate_element"></div>
+
+                                <!-- Google Translate script -->
+                                <script type="text/javascript">
+                                    function googleTranslateElementInit() {
+                                        new google.translate.TranslateElement({
+                                            pageLanguage: 'en', // default page language
+                                            includedLanguages: 'hi', // languages you want to include
+                                            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                                        }, 'google_translate_element');
+                                    }
+                                </script>
+                                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                                <!-- Script to trigger translation on select change -->
+                                <script>
+                                    document.getElementById('lang_choice_polylang-1').addEventListener('change', function() {
+                                        var lang = this.value;
+                                        var gtSelect = document.querySelector("#google_translate_element select");
+                                        if (gtSelect) {
+                                            for (var i = 0; i < gtSelect.options.length; i++) {
+                                                if (gtSelect.options[i].value.indexOf(lang) > -1) {
+                                                    gtSelect.selectedIndex = i;
+                                                    gtSelect.dispatchEvent(new Event('change'));
+                                                    break;
+                                                }
+                                            }
+                                        }
+                                    });
+                                </script> *@
+                            </div>
+                           @*  <div class="text-size-controls">
+                                <button onclick="decreaseFont()">A-</button>
+                                <button onclick="resetFont()">A</button>
+                                <button onclick="increaseFont()">A+</button>
+                            </div> *@
+                        </div>
                     </div> <!-- row -->
                 </div> <!-- container -->
             </div> <!-- header top -->
 
-            <div class="header-logo-support pt-2 pb-2">
+            <div class="header-logo-support pt-1 pb-1">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-2 col-md-2">
                             <div class="logo">
                                 <a href="@Url.Action("Index", "Home")">
-                                    <img src="~/web/images/MGNREGA_Jharkhand.png" alt="Logo" style="height:70px;" />
+                                    <img src="~/web/images/MGNREGA_Jharkhand.png" alt="Logo" style="height:70px;width:70px;border-radius:4%;" />
                                 </a>
                             </div>
                         </div>
@@ -118,7 +186,7 @@
 
                                         </li>
                                         <li class="nav-item">
-                                            <a href="#">About us</a>
+                                            <a href="@Url.Action("About_us", "Home")">About us</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="#">Job Card</a>
@@ -182,7 +250,7 @@
         </div>
 
         <!--====== SEARCH BOX PART ENDS ======-->
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
@@ -280,7 +348,7 @@
                     <div class="col-md-12">
                         <div class="copyright text-md-left text-center">
                             <p class="text-center">
-                                <a href="https://jslps.in/" target="_blank" style="color:#ffffff; text-decoration:none;font-size: 13px;">
+                                <a href="https://jslps.in/" target="_blank" style="color:#ffffff; text-decoration:none;font-size: 18px;">
                                     Copyright   © <span id="year"></span> Government of Jharkhand. All Rights Reserved. | Version 1.0 | Developed & Maintained by JSLPS
                                 </a>
                             </p>
@@ -334,37 +402,7 @@
 
 
     @await RenderSectionAsync("Scripts", required: false)
-    <script>
-        // Translation dictionary
-        const translations = {
-          en: {
-            welcome: "Welcome to Our Website",
-            intro: "This is a simple demo of language switcher."
-          },
-          hi: {
-            welcome: "हमारी वेबसाइट पर आपका स्वागत है",
-            intro: "यह भाषा बदलने का एक सरल डेमो है।"
-          }
-        };
 
-        // Set default language
-        function setLanguage(lang) {
-          document.querySelectorAll("[data-translate]").forEach(el => {
-            let key = el.getAttribute("data-translate");
-            el.innerText = translations[lang][key];
-          });
-
-          // Save preference in localStorage
-          localStorage.setItem("site-lang", lang);
-        }
-
-        // On page load, apply saved language or default to English
-        window.onload = () => {
-          let savedLang = localStorage.getItem("site-lang") || "en";
-          document.getElementById("langSwitcher").value = savedLang;
-          setLanguage(savedLang);
-        };
-    </script>
     <script>
         window.addEventListener('scroll', function () {
             const logoItem = document.querySelector('.logo-item');
@@ -394,5 +432,109 @@
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+   @*  <script>
+        let currentSize = 100; // percentage of default font size
+
+        function changeFontSize(amount) {
+          currentSize += amount;
+          document.body.style.fontSize = currentSize + "%";
+              let elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p");
+        elements.forEach(el => {
+          el.style.fontSize = currentSize + "%";
+        });
+        }
+
+        function increaseFont() {
+          changeFontSize(10);  // increase 10%
+        }
+
+        function decreaseFont() {
+          changeFontSize(-10); // decrease 10%
+        }
+
+        function resetFont() {
+          currentSize = 100;
+          document.body.style.fontSize = currentSize + "%";
+          // document.getElementById("content").style.fontSize = currentSize + "%";
+               let elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p");
+        elements.forEach(el => {
+          el.style.fontSize = currentSize + "%";
+        });
+        }
+    </script>
+ *@
+    <script>
+        let currentSize = 100;   // start at 100%
+        const minSize = 90;      // minimum 70%
+        const maxSize = 130;     // maximum 150%
+
+        function changeFontSize(amount) {
+          let newSize = currentSize + amount;
+
+          if (newSize >= minSize && newSize <= maxSize) {
+            currentSize = newSize;
+            document.body.style.fontSize = currentSize + "%";
+            let elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p");
+            elements.forEach(el => {
+              el.style.fontSize = currentSize + "%";
+            });
+          }
+        }
+
+        function increaseFont() {
+          changeFontSize(5);  // +10%
+        }
+
+        function decreaseFont() {
+          changeFontSize(-5); // -10%
+        }
+
+        function resetFont() {
+          currentSize = 100;
+          document.body.style.fontSize = currentSize + "%";
+          let elements = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p");
+          elements.forEach(el => {
+            el.style.fontSize = currentSize + "%";
+          });
+        }
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const elementsToTranslate = document.querySelectorAll("h1, h2, h3, h4, h5, h6, p");
+          const langSelect = document.getElementById("lang_choice_polylang-1");
+
+          // Store original English text
+          elementsToTranslate.forEach(el => {
+            el.setAttribute("data-original", el.innerText.trim());
+          });
+
+          langSelect.addEventListener("change", function () {
+            let lang = this.value;
+
+            elementsToTranslate.forEach(el => {
+              let originalText = el.getAttribute("data-original");
+
+              if (lang === "en" || lang === "/en/home/") {
+                // Restore English
+                el.innerText = originalText;
+              } else if (lang === "hi" || lang === "/") {
+                // Translate to Hindi
+                fetch(
+                  "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=hi&dt=t&q=" +
+                    encodeURIComponent(originalText)
+                )
+                  .then(res => res.json())
+                  .then(data => {
+                    if (data && data[0] && data[0][0] && data[0][0][0]) {
+                      el.innerText = data[0][0][0];
+                    }
+                  })
+                  .catch(err => console.error("Translation error:", err));
+              }
+            });
+          });
+        });
+    </script>
+
 </body>
 </html>
